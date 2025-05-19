@@ -9,25 +9,24 @@ DisplaySSD1306_128x64_I2C display(-1);
 float valeur = 0.0;
 
 // Adresse DevAddr de ton appareil (ABP)
-static const u4_t DEVADDR = 0x260BFC9A;
+static const u4_t DEVADDR = 0x260B0634;
 
 // Clé de session réseau (NwkSKey)
 static const PROGMEM u1_t NWKSKEY[16] = {
-  0x47, 0x79, 0x12, 0x7C, 0xC1, 0x28, 0x3B, 0xDF,
-  0x0E, 0x23, 0x1B, 0xF3, 0x02, 0x8D, 0xDC, 0x95
+  0x2C, 0x4D, 0x18, 0xA5, 0xDE, 0xA1, 0x3F, 0x52,
+  0x12, 0x68, 0x87, 0xAB, 0xCD, 0xCA, 0xCE, 0x54
 };
 
 // Clé de session application (AppSKey)
 static const PROGMEM u1_t APPSKEY[16] = {
-  0x43, 0x40, 0xBD, 0x50, 0x7F, 0x38, 0x17, 0x77,
-  0x86, 0xA2, 0x66, 0xFE, 0xB2, 0xA4, 0x75, 0xD6
+  0x56, 0xBE, 0xBD, 0xB4, 0xAE, 0x38, 0x82, 0x4C,
+  0x76, 0xF7, 0xF8, 0xFC, 0x4B, 0xED, 0x17, 0xDF
 };
 
 // Données à transmettre
 static uint8_t mydata[] = "BABA";
 static osjob_t sendjob;
 
-const unsigned TX_INTERVAL = 30; // secondes entre tentatives d'envoi
 int taux = 0; // Variable simulée, à ajuster avec un capteur réel
 
 // Brochage de la carte
@@ -55,7 +54,6 @@ void onEvent(ev_t ev) {
                 Serial.println(F(" bytes of payload"));
             }
             // Replanifier le prochain envoi
-            os_setTimedCallback(&sendjob, os_getTime() + sec2osticks(TX_INTERVAL), do_send);
             break;
         default:
             Serial.print(F("Event: "));
@@ -64,26 +62,6 @@ void onEvent(ev_t ev) {
     }
 }
 
-void do_send(osjob_t* j) {
-
-
-    Serial.print(F("Mesure taux = "));
-    Serial.println(valeur);
-
-    if (valeur < 40) {
-        if (LMIC.opmode & OP_TXRXPEND) {
-            Serial.println(F("OP_TXRXPEND, not sending"));
-        } else {
-            LMIC_setTxData2(1, mydata, sizeof(mydata) - 1, 0);
-            Serial.println(F("Packet queued: BABA"));
-        }
-    } else {
-        Serial.println(F("Taux >= 40, pas d'envoi"));
-    }
-
-    // Programmer la prochaine tentative, même si rien n’est envoyé
-    os_setTimedCallback(&sendjob, os_getTime() + sec2osticks(TX_INTERVAL), do_send);
-}
 
 void setup() {
     Serial.begin(115200);
@@ -115,7 +93,6 @@ void setup() {
     LMIC_setDrTxpow(DR_SF7, 20);
 
     // Démarrage initial
-    do_send(&sendjob);
     display.begin();
     display.fill(0x00);
     display.setFixedFont(ssd1306xled_font6x8);
@@ -136,10 +113,16 @@ void loop() {
     //led vert
   }
   
-  if (valeur <= 40) {
-    //envoyer mail
-    //led rouge
-  }
+  if (valeur < 40) {
+        if (LMIC.opmode & OP_TXRXPEND) {
+            Serial.println(F("OP_TXRXPEND, not sending"));
+        } else {
+            LMIC_setTxData2(1, mydata, sizeof(mydata) - 1, 0);
+            Serial.println(F("Packet queued: BABA"));
+        }
+    } else {
+        Serial.println(F("Taux >= 40, pas d'envoi"));
+    }
 
   if (valeur >= 60) {
     //led bleu
