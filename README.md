@@ -22,3 +22,10 @@ lien du site utilisé : https://www.thethingsnetwork.org/
 
 Et puis ensuite grace a un webook crée nous un pouvont crée lien que quand le message et reçu nous envoyont un mail 
 directment saisi sur le webook avec comme mon message "attention ta plante a soif, va l'arroser vite" 
+
+# Option suplémentaires 
+
+en plus de cette communication incroyable nous avons en plus rajouté quelque option a notre projet:
+
+* Un écran oled nous affichant en temp réel le taux d'humidité
+* l'utilisation de led de differente selon le taux d'humidité, inferieur a 40%: rouge, entre 40 et 60: verte et superieur à 60: bleu (malheuresement de le faire dans notre programme car la cartes ne posséde pas assez de stockage pour les led)
