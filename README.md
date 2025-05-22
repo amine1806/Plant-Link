@@ -4,7 +4,13 @@ Ce projet est réalisé dans le cadre du module Communication Sans Fil en Licenc
 ![ChatGPT Image 22 mai 2025, 16_19_22](https://github.com/user-attachments/assets/4abf768d-c1f6-4122-a66b-7bd9a429cee8)
 
 # Description 
-Plant link aura pour but de rendre votre pot de plante connécté comme son nom l'indique
+Plant link aura pour but de rendre votre pot de plante connécté comme son nom l'indique.
 
 le système est tres simple le pot de plante est fournis d'un boitié exterieur directement fixé qui a pour but de 
-contenir la carte UCA fournis par l'université, laissant notament de la place pour un écran oled et un capteur d'humidité
+contenir la carte UCA fournis par l'université, laissant notament de la place pour un écran oled et un capteur d'humidité.
+
+Et donc son objectif principale sera de vous envoyer un mail quand le taux d'humidié de votre plante est inferieur a 40%.
+
+# L'envoye du mail
+
+l'envoye du mail se fait par une communication LoRa ou comme vous pouvait le voir juste ici 
