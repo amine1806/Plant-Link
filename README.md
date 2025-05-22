@@ -40,5 +40,7 @@ en plus de cette communication incroyable nous avons en plus rajouté quelque op
 Ce projet qui a été réaliser par Amine Boufenchouche et Nicolas podda, ou sur 6 semaine de travaille nous somme repartie la maniere suivant : 
 ![image](https://github.com/user-attachments/assets/d28d97aa-c73a-45aa-b3dc-722bf23a2ddb)
 
-* 1er et 2eme tâches réaliser par Amine
-* 3eme tâche et montage du pot par Nicolas
+* 1er tâche: Amine
+* 2eme tâche: Amine et Nicolas
+* 3eme tâche: Amine
+* Montage du pôt: Nicolas
