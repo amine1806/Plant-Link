@@ -38,9 +38,10 @@ en plus de cette communication incroyable nous avons en plus rajouté quelque op
 * 10 fils
 
 Ce projet qui a été réaliser par Amine Boufenchouche et Nicolas podda, ou sur 6 semaine de travaille nous somme repartie la maniere suivant : 
-![image](https://github.com/user-attachments/assets/d28d97aa-c73a-45aa-b3dc-722bf23a2ddb)
+![image](https://github.com/user-attachments/assets/b0082b1c-02e3-4dbe-9ec5-07ce25f27fb7)
 
 * 1er tâche: Amine
 * 2eme tâche: Amine et Nicolas
 * 3eme tâche: Amine
+* 4eme tâche: (manque d'espace dans la carte)
 * Montage du pôt: Nicolas
