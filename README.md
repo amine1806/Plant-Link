@@ -19,3 +19,6 @@ l'envoye du mail se fait par une communication LoRa ou comme vous pouvait le voi
 Si la valeur dépasse en dessous des 40% il va envoyer un message a un application crée sur ThethingNetwork.
 
 lien du site utilisé : https://www.thethingsnetwork.org/
+
+Et puis ensuite grace a un webook crée nous un pouvont crée lien que quand le message et reçu nous envoyont un mail 
+directment saisi sur le webook avec comme mon message "attention ta plante a soif, va l'arroser vite" 
