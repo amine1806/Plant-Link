@@ -29,3 +29,16 @@ en plus de cette communication incroyable nous avons en plus rajouté quelque op
 
 * Un écran oled nous affichant en temp réel le taux d'humidité
 * l'utilisation de led de differente selon le taux d'humidité, inferieur a 40%: rouge, entre 40 et 60: verte et superieur à 60: bleu (malheuresement de le faire dans notre programme car la cartes ne posséde pas assez de stockage pour les led)
+
+# Materielles et repartition des tâches 
+
+* Une carte arduino (ici une cartes UCA21)
+* Un capteur d'humidité
+* Un écran Oled
+* 10 fils
+
+Ce projet qui a été réaliser par Amine Boufenchouche et Nicolas podda, ou sur 6 semaine de travaille nous somme repartie la maniere suivant : 
+![image](https://github.com/user-attachments/assets/d28d97aa-c73a-45aa-b3dc-722bf23a2ddb)
+
+* 1er et 2eme tâches réaliser par Amine
+* 3eme tâche et montage du pot par Nicolas
