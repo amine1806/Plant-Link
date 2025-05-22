@@ -21,7 +21,9 @@ Si la valeur dépasse en dessous des 40% il va envoyer un message a un applicati
 lien du site utilisé : https://www.thethingsnetwork.org/
 
 Et puis ensuite grace a un webook crée nous un pouvont crée lien que quand le message et reçu nous envoyont un mail 
-directment saisi sur le webook avec comme mon message "attention ta plante a soif, va l'arroser vite" 
+directment saisi sur le wehbook avec comme mon message "attention ta plante a soif, va l'arroser vite" 
+
+(le wehbook que nous utilisont pour envoyer est payant mais vous pouvait trouver une alternative avec la création d'un serveur privé en python mais a cause du manque de temps nous avons pas put le faire)
 
 # Option suplémentaires 
 
