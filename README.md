@@ -6,7 +6,7 @@ Ce projet est réalisé dans le cadre du module Communication Sans Fil en Licenc
 # Description 
 Plant link aura pour but de rendre votre pot de plante connécté comme son nom l'indique.
 
-le système est tres simple le pot de plante est fournis d'un boitié exterieur directement fixé qui a pour but de 
+le système est très simple le pot de plante est fournis d'un boitié exterieur directement fixé qui a pour but de 
 contenir la carte UCA fournis par l'université, laissant notament de la place pour un écran oled et un capteur d'humidité.
 
 Et donc son objectif principale sera de vous envoyer un mail quand le taux d'humidié de votre plante est inferieur a 40%.
@@ -20,8 +20,8 @@ Si la valeur dépasse en dessous des 40% il va envoyer un message a un applicati
 
 lien du site utilisé : https://www.thethingsnetwork.org/
 
-Et puis ensuite grace a un webook crée nous un pouvont crée lien que quand le message et reçu nous envoyont un mail 
-directment saisi sur le wehbook avec comme mon message "attention ta plante a soif, va l'arroser vite" 
+Et puis ensuite grace à un wehbook crée nous un pouvont crée lien que quand le message est reçu nous envoyont un mail 
+directment saisi sur le wehbook avec comme pour exemple le message "attention ta plante a soif, va l'arroser vite" 
 
 (le wehbook que nous utilisont pour envoyer est payant mais vous pouvait trouver une alternative avec la création d'un serveur privé en python mais a cause du manque de temps nous avons pas put le faire)
 
