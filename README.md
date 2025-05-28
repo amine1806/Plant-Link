@@ -11,6 +11,10 @@ contenir la carte UCA fournis par l'université, laissant notament de la place p
 
 Et donc son objectif principale sera de vous envoyer un mail quand le taux d'humidié de votre plante est inferieur a 40%.
 
+# présentation power point
+
+[projet.pptx](https://github.com/user-attachments/files/20479971/projet.pptx)
+
 # L'envoye du mail
 
 l'envoye du mail se fait par une communication LoRa ou comme vous pouvait le voir juste ici 
