@@ -15,9 +15,9 @@ Et donc son objectif principale sera de vous envoyer un mail quand le taux d'hum
 
 [projet.pptx](https://github.com/user-attachments/files/20479971/projet.pptx)
 
-# L'envoye du mail
+# L'envoi du mail
 
-l'envoye du mail se fait par une communication LoRa ou comme vous pouvait le voir juste ici 
+l'envoi du mail se fait par une communication LoRa ou comme vous pouvait le voir juste ici 
 ![image](https://github.com/user-attachments/assets/0e3d62cb-ebc1-4456-a3c2-2370ffaa7d1e)
 
 Si la valeur dépasse en dessous des 40% il va envoyer un message a un application crée sur ThethingNetwork.
