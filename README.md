@@ -10,6 +10,8 @@ Le système est très simple : le pot de plante est fournis avec boitié exterie
 contenir la carte UCA21 fournie par l'université, laissant notament de la place pour un écran oled et un capteur d'humidité.
 
 Et donc son objectif principal sera de vous envoyer un mail quand le taux d'humidié de votre plante est inferieur a 40%.
+![IMG_7894](https://github.com/user-attachments/assets/d1defd8f-d94c-472f-8501-c7d476f875f9)
+![IMG_7893](https://github.com/user-attachments/assets/d9646eab-d2ac-4630-9c9f-7262111e0f37)
 
 # présentation power point
 
